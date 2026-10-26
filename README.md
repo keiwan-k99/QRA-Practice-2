@@ -14,7 +14,7 @@ This repository contains Python scripts demonstrating the core data engineering 
 ## Implemented Pipelines
 
 - **Source:** [Hugging Face](https://huggingface.co/datasets/Kickmuncher/economic_resilience_risk_model)
-- **Script:** `src/economic_resilience_pipeline.py`
+- **Script:** `src/data_analysis.py`
 - **Key Operations:**
   - **Ingestion:** Loaded 10,000 rows and 22 columns (CSV). Identified that the JSON file contained metadata, not entity data.
   - **Validation (Raw):** Checked for duplicate EntityIDs and negative resource values. Identified `ResourceVolatilityIndex` as a zero-variance column (95.7% of values were 1.0).
